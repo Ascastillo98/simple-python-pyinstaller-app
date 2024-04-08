@@ -10,8 +10,8 @@ $(lsb_release -cs) stable" > /etc/apt/sources.list.d/docker.list
 RUN apt-get update && apt-get install -y docker-ce-cli
 
 #Nota: El docker de Jenkins necesita tener instalado python para las fases
-#de ejecución y tests. Se ha instalado tal y como se muestra en el repositorio
-#del tutorial
+#de ejecución y tests. Se ha instalado tal y como se muestra en el segundo repositorio
+#del tutorial: https://github.com/jenkins-docs/quickstart-tutorials/blob/main/dockerfiles/python/Dockerfile
 
 # 1. Update the package list.
 # 2. Install necessary dependencies including Python, python3-venv and several Python-related packages.
