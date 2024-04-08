@@ -1,6 +1,6 @@
 # Práctica Jenkins: Configuraciones
 ## Paso 1: Creación del Contenedor de Jenkins
-Además del contenido que se nos ofrece en el guión de la práctica, debemos añadir los comandos para instalar python, ya que crearemos una aplicación con este lenguaje:
+Además del contenido que se nos ofrece en el guión de la práctica, debemos añadir los comandos para instalar python, ya que crearemos una aplicación con este lenguaje. Estos comandos se muestran en un segundo repositorio indicado en el tutorial, en el que se muestra la forma de crear una imagen de Jenkins y python con los plugins necesarios para ejecutar jUnit
 ```
 # 1. Update the package list.
 # 2. Install necessary dependencies including Python, python3-venv and several Python-related packages.
