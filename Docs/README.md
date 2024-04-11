@@ -117,8 +117,10 @@ resource "docker_container" "myjenkinspython" {
 ```
 * Tras esto, ejecutamos terraform validate para comprobar que el formato es correcto, y terraform apply para levantar el servicio.
 
+## Paso 4: Configuración de jenkins
+Jenkins nos pedirá que insertemos una contraseña que se encuentra en un directorio del contenedor de jenkins, en un fichero llamado InitialAdminPassword. Para encontrar la contraseña, usamos el comando ``` docker exec -ti contenedorJenkins bash´´´ Siendo "contenedorJenkins" el nombre designado para nuestro contenedor en el archivo de Terraform. Tras esto, instalamos los plugins recomendados y podremos empezar a utilizar jenkins.
 
-
+Debemos acceder a nueva tarea, crear una pipeline e indicar a Jenkins que dicha pipeline se encuentra en el repositorio que hemos forkeado. Seleccionamos las opciones "Pipeline script from SCM" en "Definition" e insertamos el enlace a este repositorio en la opción "SCM". Tras esto, hacemos click en "Construir ahora" para ejecutar la pipeline.
 
 
 
